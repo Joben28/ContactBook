@@ -67,8 +67,8 @@
                         Width="90" Height="40" Margin="5" 
                         Background="{StaticResource MaximumBlueGreen}">
                     <StackPanel Orientation="Horizontal">
-                        <Label FontWeight="Bold">Save</Label>
                         <Image Source="pack://siteoforigin:,,,/Resources/saveIcon.png"/>
+                        <Label FontWeight="Bold">Save</Label>
                     </StackPanel>
                 </Button>
             </StackPanel>
