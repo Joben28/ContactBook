@@ -51,7 +51,7 @@
                     <Button Style="{StaticResource MenuIconButton}"
                     Command="{Binding BrowseImageCommand}"
                     Visibility="{Binding IsEditMode, Converter={StaticResource IsEditConverter}}"
-                    Margin="5" Width="64" Background="#FF8854d0"
+                    Margin="5" Width="64" Background="{StaticResource GloomyPurple}"
                     VerticalAlignment="Bottom" HorizontalAlignment="Right"
                     Foreground="Black" FontWeight="DemiBold">
                         Browse
@@ -65,7 +65,7 @@
                         Visibility="{Binding IsEditMode, Converter={StaticResource IsEditConverter}}"
                         Command="{Binding SaveCommand}" 
                         Width="90" Height="40" Margin="5" 
-                        Background="#FF26de81">
+                        Background="{StaticResource MaximumBlueGreen}">
                     <StackPanel Orientation="Horizontal">
                         <Label FontWeight="Bold">Save</Label>
                         <Image Source="pack://siteoforigin:,,,/Resources/saveIcon.png"/>

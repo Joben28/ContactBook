@@ -11,14 +11,7 @@
         <local:AppViewModel/>
     </Window.DataContext>
     <DockPanel>
-        <Grid Height="40" DockPanel.Dock="Top">
-            <Grid.Background>
-                <LinearGradientBrush EndPoint="0,1">
-                    <GradientStop Color="#FF4b6584" Offset="0.0" />
-                    <GradientStop Color="#FF526B89" Offset="0.5" />
-                    <GradientStop Color="#FF59718F" Offset="1.0" />
-                </LinearGradientBrush>
-            </Grid.Background>
+        <Grid Height="40" DockPanel.Dock="Top" Background="{StaticResource BlueGreyGradient}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
