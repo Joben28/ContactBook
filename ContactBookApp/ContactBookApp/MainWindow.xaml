@@ -36,21 +36,21 @@
                         Background="{StaticResource BlueGreyGradient}"
                         Command="{Binding BookVM.ContactsVM.AddCommand}">
                     <Button.Content>
-                        <Image Height="30" Width="30" Source="pack://siteoforigin:,,,/Resources/plusIcon.png" />
+                        <Image Height="30" Width="30" Source="pack://siteoforigin:,,,/Resources/addIcon.png" />
                     </Button.Content>
                 </Button>
                 <Button Style="{StaticResource MenuIconButton}"
                         Background="{StaticResource BlueGreyGradient}"
                         Command="{Binding BookVM.ContactsVM.EditCommand}">
                     <Button.Content>
-                        <Image Height="30" Width="30"  Source="pack://siteoforigin:,,,/Resources/editIcon.png" />
+                        <Image Height="30" Width="30" Source="pack://siteoforigin:,,,/Resources/createIcon.png" />
                     </Button.Content>
                 </Button>
                 <Button Style="{StaticResource MenuIconButton}"
                         Background="{StaticResource BlueGreyGradient}"
                         Command="{Binding BookVM.ContactsVM.DeleteCommand}">
                     <Button.Content>
-                        <Image Height="30" Width="30"  Source="pack://siteoforigin:,,,/Resources/trashIcon.png" />
+                        <Image Height="30" Width="30"  Source="pack://siteoforigin:,,,/Resources/deleteIcon.png" />
                     </Button.Content>
                 </Button>
             </StackPanel>
