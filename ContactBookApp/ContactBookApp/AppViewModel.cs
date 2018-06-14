@@ -27,7 +27,7 @@ namespace ContactBookApp
 
         public AppViewModel()
         {
-            var dataService = new MockContactDataService();
+            var dataService = new JsonContactDataService();
             var dialogService = new WindowDialogService();
 
             BookVM = new BookViewModel(dataService, dialogService);

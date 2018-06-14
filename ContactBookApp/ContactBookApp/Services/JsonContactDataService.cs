@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ContactBookApp.Model;
+using Newtonsoft.Json;
 
 namespace ContactBookApp.Services
 {
@@ -11,12 +13,24 @@ namespace ContactBookApp.Services
     {
         public IEnumerable<Contact> GetContacts()
         {
-            throw new NotImplementedException();
+            if (!File.Exists("Resources/contactdata.json"))
+            {
+                File.Create("Resources/contactdata.json").Close();
+            }
+
+            var serializedContacts = File.ReadAllText("Resources/contactdata.json");
+            var contacts = JsonConvert.DeserializeObject<IEnumerable<Contact>>(serializedContacts);
+
+            if (contacts == null)
+                return new List<Contact>();
+
+            return contacts;
         }
 
         public void Save(IEnumerable<Contact> contacts)
         {
-            throw new NotImplementedException();
+            var serializedContacts = JsonConvert.SerializeObject(contacts);
+            File.WriteAllText("Resources/contactdata.json", serializedContacts);
         }
     }
 }
