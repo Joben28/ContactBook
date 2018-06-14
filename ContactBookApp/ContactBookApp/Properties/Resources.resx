@@ -121,25 +121,22 @@
   <data name="default_contact_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\default-contact-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="editIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\editIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="addIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="plusIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plusIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="checkedStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkedStar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trashIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trashIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="createIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\createIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="saveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\saveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="deleteIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deleteIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="favorite_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favorite-checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hoverStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hoverStar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="favorite_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favorite-hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="favorite_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favorite-unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="uncheckedStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uncheckedStar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

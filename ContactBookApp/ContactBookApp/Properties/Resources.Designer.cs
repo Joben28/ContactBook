@@ -63,6 +63,36 @@ namespace ContactBookApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addIcon {
+            get {
+                object obj = ResourceManager.GetObject("addIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkedStar {
+            get {
+                object obj = ResourceManager.GetObject("checkedStar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap createIcon {
+            get {
+                object obj = ResourceManager.GetObject("createIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap default_contact_image {
             get {
                 object obj = ResourceManager.GetObject("default_contact_image", resourceCulture);
@@ -73,9 +103,9 @@ namespace ContactBookApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap editIcon {
+        internal static System.Drawing.Bitmap deleteIcon {
             get {
-                object obj = ResourceManager.GetObject("editIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("deleteIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +113,9 @@ namespace ContactBookApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap favorite_checked {
+        internal static System.Drawing.Bitmap hoverStar {
             get {
-                object obj = ResourceManager.GetObject("favorite_checked", resourceCulture);
+                object obj = ResourceManager.GetObject("hoverStar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,49 +123,9 @@ namespace ContactBookApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap favorite_hover {
+        internal static System.Drawing.Bitmap uncheckedStar {
             get {
-                object obj = ResourceManager.GetObject("favorite_hover", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap favorite_unchecked {
-            get {
-                object obj = ResourceManager.GetObject("favorite_unchecked", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap plusIcon {
-            get {
-                object obj = ResourceManager.GetObject("plusIcon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap saveIcon {
-            get {
-                object obj = ResourceManager.GetObject("saveIcon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap trashIcon {
-            get {
-                object obj = ResourceManager.GetObject("trashIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("uncheckedStar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
