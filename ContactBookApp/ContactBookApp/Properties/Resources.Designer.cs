@@ -93,9 +93,9 @@ namespace ContactBookApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap default_contact_image {
+        internal static System.Drawing.Bitmap defaultContact {
             get {
-                object obj = ResourceManager.GetObject("default_contact_image", resourceCulture);
+                object obj = ResourceManager.GetObject("defaultContact", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

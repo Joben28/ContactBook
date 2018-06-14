@@ -13,7 +13,7 @@
         </DataTemplate>
         
         <!--Images-->
-        <BitmapImage x:Key="DefaultContactImage" UriSource="pack://siteoforigin:,,,/Resources/default-contact-image.png" />
+        <BitmapImage x:Key="DefaultContactImage" UriSource="pack://siteoforigin:,,,/Resources/defaultContact.png" />
         
         <!--Converters-->
         <helper:BoolToVisibilityConverter x:Key="IsEditConverter"/>
