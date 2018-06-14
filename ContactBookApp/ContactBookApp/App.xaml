@@ -19,7 +19,7 @@
         <helper:BoolToVisibilityConverter x:Key="IsEditConverter"/>
         <helper:NullToVisibilityConverter x:Key="SelectedContactConverter"/>
 
-        <!--Brushes-->
+        <!--Brushes (Palette from: https://flatuicolors.com/palette/de)-->
         <LinearGradientBrush x:Key="BlueGreyGradient" EndPoint="0,1">
             <GradientStop Color="#FF4B6584" Offset="0.0" />
             <GradientStop Color="#FF526B89" Offset="0.5" />
