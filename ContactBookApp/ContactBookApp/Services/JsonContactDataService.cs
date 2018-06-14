@@ -11,14 +11,16 @@ namespace ContactBookApp.Services
 {
     public class JsonContactDataService : IContactDataService
     {
+        private readonly string _dataPath = "Resources/contactdata.json";
+
         public IEnumerable<Contact> GetContacts()
         {
-            if (!File.Exists("Resources/contactdata.json"))
+            if (!File.Exists(_dataPath))
             {
-                File.Create("Resources/contactdata.json").Close();
+                File.Create(_dataPath).Close();
             }
 
-            var serializedContacts = File.ReadAllText("Resources/contactdata.json");
+            var serializedContacts = File.ReadAllText(_dataPath);
             var contacts = JsonConvert.DeserializeObject<IEnumerable<Contact>>(serializedContacts);
 
             if (contacts == null)
@@ -30,7 +32,7 @@ namespace ContactBookApp.Services
         public void Save(IEnumerable<Contact> contacts)
         {
             var serializedContacts = JsonConvert.SerializeObject(contacts);
-            File.WriteAllText("Resources/contactdata.json", serializedContacts);
+            File.WriteAllText(_dataPath, serializedContacts);
         }
     }
 }
