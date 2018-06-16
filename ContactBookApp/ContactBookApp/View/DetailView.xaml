@@ -76,29 +76,7 @@
         
         <!--Phone Details-->
         <StackPanel Grid.Row="1" Margin="5">
-            <Border Style="{StaticResource DetailBorder}">
-                <Label FontWeight="Bold" Foreground="#FFF5F7F9">Phone</Label>
-            </Border>
-
-            <StackPanel>
-                <!--Home Numbers-->
-                <Label Style="{StaticResource DetailLabel}">Home</Label>
-                <Label Style="{StaticResource ContentLabel}"
-                   Content="{Binding SelectedContact.PhoneNumbers[0], FallbackValue=555-555-5555}"
-                   Visibility="{Binding IsDisplayMode, Converter={StaticResource IsEditConverter}}"/>
-                <TextBox  Style="{StaticResource EditBox}"
-                      Text="{Binding SelectedContact.PhoneNumbers[0], FallbackValue=555-555-5555, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                      Visibility="{Binding IsEditMode, Converter={StaticResource IsEditConverter}}"/>
-
-                <!--Cell Numbers-->
-                <Label Style="{StaticResource DetailLabel}">Cell</Label>
-                <Label Style="{StaticResource ContentLabel}"
-                   Content="{Binding SelectedContact.PhoneNumbers[1], FallbackValue=555-555-5555}"
-                   Visibility="{Binding IsDisplayMode, Converter={StaticResource IsEditConverter}}"/>
-                <TextBox Style="{StaticResource EditBox}"
-                     Text="{Binding SelectedContact.PhoneNumbers[1], FallbackValue=555-555-5555, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     Visibility="{Binding IsEditMode, Converter={StaticResource IsEditConverter}}"/>
-            </StackPanel>
+            <local:DetailPanelView Title="Phone" FirstSubTitle="Home" SecondSubTitle="Cell" DetailValues="{Binding SelectedContact.PhoneNumbers}"/>
         </StackPanel>
         
         <!--Email Details-->

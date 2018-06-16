@@ -76,6 +76,9 @@
     <Compile Include="View\ContactItemView.xaml.cs">
       <DependentUpon>ContactItemView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\DetailPanelView.xaml.cs">
+      <DependentUpon>DetailPanelView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\DetailView.xaml.cs">
       <DependentUpon>DetailView.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ContactItemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetailPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -137,6 +144,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\contactdata.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\createIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

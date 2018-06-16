@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ContactBookApp"
         xmlns:vm="clr-namespace:ContactBookApp.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="520" Width="700" Background="#FFd1d8e0">
+        Title="WPF Contact Book" Height="520" Width="700" Background="#FFd1d8e0">
     <Window.DataContext>
         <local:AppViewModel/>
     </Window.DataContext>
