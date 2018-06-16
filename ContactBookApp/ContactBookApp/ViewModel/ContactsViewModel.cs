@@ -72,7 +72,12 @@ namespace ContactBookApp.ViewModel
         {
             _dataService.Save(Contacts);
             IsEditMode = false;
-            OnPropertyChanged("SelectedContact");
+
+            //TODO: This is temporary. For some reason PropertyChanged is not working.
+            //Likely due to the custome user control dependency properties.
+            var old = SelectedContact;
+            SelectedContact = null;
+            SelectedContact = old;
         }
 
         private void Add()
