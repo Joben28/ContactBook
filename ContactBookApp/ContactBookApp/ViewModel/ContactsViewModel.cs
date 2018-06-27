@@ -46,6 +46,7 @@ namespace ContactBookApp.ViewModel
         public ICommand DeleteCommand { get; private set; }
         public ICommand SaveCommand { get; private set; }
         public ICommand BrowseImageCommand { get; private set; }
+        public ICommand FavoriteCommand { get; private set; }
 
         private IContactDataService _dataService;
         private IDialogService _dialogService;
@@ -60,6 +61,13 @@ namespace ContactBookApp.ViewModel
             AddCommand = new RelayCommand(Add);
             EditCommand = new RelayCommand(Edit, CanEdit);
             DeleteCommand = new RelayCommand(Delete, CanDelete);
+            FavoriteCommand = new RelayCommand(Favorite);
+        }
+
+        private void Favorite()
+        {
+            SelectedContact.IsFavorite = !SelectedContact.IsFavorite;
+            Save();
         }
 
         private void BrowseImage()
@@ -72,12 +80,7 @@ namespace ContactBookApp.ViewModel
         {
             _dataService.Save(Contacts);
             IsEditMode = false;
-
-            //TODO: This is temporary. For some reason PropertyChanged is not working.
-            //Likely due to the custome user control dependency properties.
-            var old = SelectedContact;
-            SelectedContact = null;
-            SelectedContact = old;
+            OnPropertyChanged("SelectedContact");
         }
 
         private void Add()
